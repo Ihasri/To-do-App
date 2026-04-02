@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Font awesome-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>To-do app</title>
+</head>
+<body>
+    <div class="container">
+        <!--Sidebar-->
+       <div class="sidebar">
+           <div class="header">
+             <h1> <i class="fa-solid fa-list-check"></i> To-do Tasks</h1>
+            </div>
+          
+            <div class="input">
+                <input 
+                   type="text"
+                   id="todoName"
+                   placeholder="What is your next Task"
+                 />
+                 <textarea name="task description" id="task"
+                 placeholder="describe your task"></textarea>
+                 <button class="btn" id="addbtn">
+                 <i class="fa-solid fa-plus"></i>  create task
+             </button>
+            </div>
+        </div> 
+            <!--Main content-->
+        <div class="main">
+                <div class="header">
+                    <h2> Tasks overview  </h2>
+                </div>
+                <!--Todo list-->
+                <div id="todolist">
+                    <div class="todo-item">
+                        <div class="todo-content">
+                            <h3>Task Name</h3>
+                            <p>Task description</p>
+                            <span class="statuspending">Pending</span>
+                        </div>
+                    
+                      <!--action-->
+                       <div class="todo-action">
+                          <button class="edit"> <i class="fa-solid fa-pen-to-square"></i>edit</button>
+                          <button class="delete"> <i class="fa-solid fa-trash-can"></i> delete</button>
+                        </div>
+                   </div>
+                  
+                </div>
+        </div>
+    </div>
+    <!--java-script-->
+     <script src="app.js"></script>
+</body>
+</html> 
